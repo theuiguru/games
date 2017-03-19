@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><title>Astro Racer</title><style type="text/css">
+html, body {margin:0; padding:0; background:#000 url(http://49.media.tumblr.com/c42ce0cd442f64d02a5404dcf261e7ec/tumblr_nyetg4dE511u7gnm9o1_250.gif);}  
+</style></head><body>
+<div class="spaceRanger"></div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+  $(document).keydown(function(key) {
+    switch(parseInt(key.which,10)) {
+        // Left arrow key pressed
+      case 37:
+        $('.spaceRanger').animate({left: "-=100px"}, 'fast');
+        break;
+        // Up Arrow Pressed
+      case 38:
+        // Put our code here
+        $('.spaceRanger').animate({top: "-=100px"}, 'fast');
+        break;
+        // Right Arrow Pressed
+      case 39:
+        // Put our code here
+        $('.spaceRanger').animate({left: "+=100px"}, 'fast');
+        break;
+        // Down Arrow Pressed
+      case 40:
+        // Put our code here
+        $('.spaceRanger').animate({top: "+=100px"}, 'fast');
+        break;
+    }
+  });
+});  
+</script></body></html>
